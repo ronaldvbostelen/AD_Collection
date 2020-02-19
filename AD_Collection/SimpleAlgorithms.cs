@@ -181,5 +181,25 @@ namespace AD_Collection
         }
 
         #endregion
+        #region Fibonacci Iterative
+
+        public static long FibonacciIterative(int n)
+        {
+            var a = 0;
+            var b = 1;
+            var fib = a + b;
+
+            while (n-- > 0)
+            {
+                fib = a + b;
+                a = b;
+                b = fib;
+            }
+
+            return fib;
+        }
+
+        #endregion
+
     }
 }
