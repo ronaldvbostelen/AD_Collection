@@ -1,8 +1,10 @@
-﻿namespace AD_Collection
+﻿using System;
+
+namespace AD_Collection
 {
     public static class BinarySearchAlgo
     {
-        public static int BinarySearch(int[] array, int number)
+        public static int BinarySearch<T>(T[] array, int number) where T : IComparable
         {
             var max = array.Length - 1;
             var bot = 0;
